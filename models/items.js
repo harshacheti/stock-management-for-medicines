@@ -2,10 +2,10 @@ const db = require('../models/conn');
 
 class Item {
 
-    constructor(id, name, sku, inventory) {
+    constructor(id, name, unq, inventory) {
         this.id = id;
         this.name = name;
-        this.sku = sku;
+        this.unq = unq;
         this.inventory = inventory;
 
     }
@@ -15,7 +15,7 @@ class Item {
         // needs to remove/add inventory to specific item
         console.log(`This is itemid: ${itemid}`);
         return db.result(`
-        UPDATE items
+        UPDATE tablets
         SET inventory = inventory + ${qty}
         WHERE id=${itemid}
         `)

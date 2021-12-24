@@ -9,12 +9,12 @@ create table tablets
 (
 id serial primary key,
 name varchar(200),
-sku varchar(50),
+unq varchar(50),
 inventory integer
 );
 create table purchases 
 (
 id serial primary key,
-item_id integer references items(id),
+item_id integer references tablets(id),
 purchase_qty integer
 );
