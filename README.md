@@ -6,7 +6,7 @@ and install (**set password:1234**) then setup C:\Program Files\PostgreSQL\14\bi
 
 2.  clone repo.
 
-Paste step 3,4 and 5 in terminal
+Paste step 3,4 and 5 in Project terminal
 
 3.  ```createdb -U postgres tabeazy```
 4.  ```psql -f schema.sql -U postgres tabeazy```
